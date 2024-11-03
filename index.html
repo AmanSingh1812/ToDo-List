@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=x, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        background-image: linear-gradient(to right, #353638 10%, #0d3241 95%);
+      }
+      li{
+        display: flex;
+        width: 600px;
+        color: #737373;
+        background-color: #171717;
+        border-radius: 5px;
+         justify-content: space-between;
+          align-items: center;  
+      }
+      li>span{
+        padding: 2px;
+      }
+      li>button{
+        color: white;
+        width: 60px;
+        border-radius: 50px;
+        padding: 2px;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="w-1/2 justify-items-center justify-self-center"
+      style="margin-top: 12%"
+    >
+      <h1 class="text-pink-50 text-8xl">To Do List.</h1>
+      <div class="flex" style="margin-top: 25px">
+        <div class="flex">
+          <input
+            type="text"
+            id="input"
+            name="text"
+            class="rounded-s-2xl p-1.5 m-0 bg-neutral-900 text-neutral-500"
+            style="width: 600px"
+          />
+          <button
+            type="submit"
+            id="add"
+            class="border-2 border-white rounded-r-2xl m-0 bg-white p-1"
+          >
+            ADD
+          </button>
+        </div>
+      </div>
+      <div class="mt-5">
+        <ul id="storage" style="margin: 5px 0;"></ul>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
